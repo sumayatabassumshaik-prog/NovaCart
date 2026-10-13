@@ -53,3 +53,5 @@ This is a front-end demonstration project. Checkout does not process real paymen
 ## 👩‍💻 Author
 
 Developed as a mini e-commerce web development project for internship practice.
+<img width="1842" height="847" alt="image" src="https://github.com/user-attachments/assets/56977c6c-5c0e-48dc-8798-93065a774751" />
+
