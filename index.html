@@ -1,0 +1,174 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="Discover thoughtfully selected everyday essentials at NovaCart.">
+  <title>NovaCart — Find Your Everyday Favourite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A LITTLE SOMETHING BETTER, EVERY DAY <span>✳</span> FREE DELIVERY OVER ₹2,000</div>
+
+  <header class="header">
+    <a href="#" class="brand">nova<span>cart.</span></a>
+    <nav class="nav-links" aria-label="Product categories">
+      <a href="#shop">Discover</a>
+      <a href="#shop" data-nav-category="Tech">Tech</a>
+      <a href="#shop" data-nav-category="Lifestyle">Lifestyle</a>
+      <a href="#shop" data-nav-category="Accessories">Accessories</a>
+    </nav>
+    <div class="header-actions">
+      <button class="header-icon" id="wishlistViewButton" aria-label="Show wishlist" title="Wishlist">♡ <span id="wishlistCount">0</span></button>
+      <button class="cart-button" id="openCartButton">Bag <span id="cartCount">0</span> <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> THE EVERYDAY EDIT · VOL. 01</div>
+        <h1>Good things.<br><span>Better living.</span></h1>
+        <p>Thoughtfully picked essentials for your desk, your days, and everywhere in between.</p>
+        <a href="#shop" class="hero-button">Explore the collection <span>↘</span></a>
+        <div class="hero-note"><span>✳</span> Less noise. Better choices.</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1100&q=85" alt="Minimal, thoughtfully styled home and lifestyle essentials" fetchpriority="high">
+        <div class="hero-stamp"><span>THE</span><strong>GOOD<br>EDIT</strong><span>EST. 2026</span></div>
+        <div class="hero-caption">A collection for the considered life. <span>01 / 04</span></div>
+      </div>
+      <div class="hero-index">NC — 001 / CURATED FOR YOU</div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✳</span> Thoughtfully selected</div>
+      <div><span>↗</span> Simple, transparent pricing</div>
+      <div><span>♡</span> Your favourites, saved</div>
+      <div><span>◎</span> Easy demo checkout</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">YOUR NEXT FAVOURITE</p>
+          <h2>Objects of <span>interest.</span></h2>
+          <p class="section-description">Useful things. Lovely details. Nothing extra.</p>
+        </div>
+        <span class="product-total" id="productTotal">06 OBJECTS</span>
+      </div>
+
+      <div class="shop-toolbar">
+        <div class="filters" id="categoryFilters" aria-label="Filter products">
+          <button class="filter active" data-category="All">All items</button>
+          <button class="filter" data-category="Tech">Tech</button>
+          <button class="filter" data-category="Lifestyle">Lifestyle</button>
+          <button class="filter" data-category="Accessories">Accessories</button>
+        </div>
+        <div class="toolbar-right">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Find something..." aria-label="Search products">
+          </label>
+          <label class="sort-box">
+            <span class="sr-only">Sort products</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name: A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="results-note" id="resultsNote" aria-live="polite">Showing all products</div>
+      <div class="product-grid" id="productGrid">
+        <p class="loading-message">Preparing your collection…</p>
+      </div>
+    </section>
+
+    <section class="editorial">
+      <div class="editorial-image">
+        <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1000&q=85" alt="A calm, minimal workspace" loading="lazy">
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">A SMALL REMINDER</p>
+        <h2>Make room for<br><span>what matters.</span></h2>
+        <p>Great everyday objects don't need to shout. They just need to work beautifully, feel right, and earn their place.</p>
+        <a href="#shop" class="text-link">Find your next favourite ↗</a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">A NOTE FROM NOVACART</p>
+        <h2>Good finds, <span>occasionally.</span></h2>
+        <p>A demo newsletter form to practise validation and feedback.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <label class="sr-only" for="emailInput">Email address</label>
+        <input id="emailInput" type="email" placeholder="Your email address" required>
+        <button type="submit">Count me in ↗</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand">nova<span>cart.</span></a>
+    <p>Good things, chosen well. <span>✳</span></p>
+    <p>Student project · Demo store · 2026</p>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h2>Your bag <span id="drawerCount">(0)</span></h2>
+      </div>
+      <button class="close-button" id="closeCartButton" aria-label="Close shopping cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom">
+      <div class="shipping-progress">
+        <p id="shippingMessage">Add items to get started.</p>
+        <div class="progress-track"><span id="shippingProgress"></span></div>
+      </div>
+      <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+      <div class="summary-line"><span>Delivery</span><strong id="deliveryCost">₹0</strong></div>
+      <div class="summary-line total-line"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <p class="tax-note">Demo prices in INR. No payment is collected.</p>
+      <button id="checkoutButton" class="checkout-button">Continue to checkout ↗</button>
+      <button id="continueShoppingButton" class="continue-button">Keep exploring</button>
+    </div>
+  </aside>
+
+  <div class="modal-wrap" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal">
+      <button class="close-button modal-close" id="closeModalButton" aria-label="Close checkout">×</button>
+      <div class="modal-symbol">✳</div>
+      <p class="eyebrow">ALMOST YOURS</p>
+      <h2 id="checkoutTitle">One last little step.</h2>
+      <p class="modal-description">This is a checkout preview for your project. Enter a name to see a demo order confirmation. No payment or real order will be created.</p>
+      <form id="checkoutForm">
+        <label for="customerName">Your name</label>
+        <input id="customerName" type="text" maxlength="70" placeholder="Enter your name" required>
+        <label for="customerEmail">Email address</label>
+        <input id="customerEmail" type="email" placeholder="you@example.com" required>
+        <div class="modal-total"><span>Demo order total</span><strong id="modalTotal">₹0</strong></div>
+        <button class="checkout-button" type="submit">Preview my order ↗</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
